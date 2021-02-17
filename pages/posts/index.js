@@ -42,7 +42,7 @@ const Posts = () => {
           return (
             <li key={post.id}>
               <h3>
-                <Link href="/posts/[id]" as={`/posts/${post.id}`}>
+                <Link href={`/posts/${post.id}`}>
                   <a>{post.title}</a>
                 </Link>
               </h3>

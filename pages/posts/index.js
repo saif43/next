@@ -11,6 +11,14 @@ const Posts = ({ posts }) => {
   return (
     <div>
       <Header />
+      <Link
+        href={{
+          pathname: "/about",
+          query: { name: "test" },
+        }}
+      >
+        <a>About us</a>
+      </Link>
       <ul>
         {posts.map((post) => {
           return (

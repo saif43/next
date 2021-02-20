@@ -3,9 +3,14 @@ import React from "react";
 import Link from "next/link";
 import axios from "axios";
 
+import dynamic from "next/dynamic";
+
+const Header = dynamic(() => import("../Reuseable-Components/header"));
+
 const Posts = ({ posts }) => {
   return (
     <div>
+      <Header />
       <ul>
         {posts.map((post) => {
           return (

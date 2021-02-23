@@ -5,7 +5,7 @@ import axios from "axios";
 
 import dynamic from "next/dynamic";
 
-const Header = dynamic(() => import("../Reuseable-Components/header"));
+const Header = dynamic(() => import("../../components/header"));
 
 const Posts = ({ posts }) => {
   return (

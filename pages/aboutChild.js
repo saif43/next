@@ -6,7 +6,14 @@ const AboutChild = () => {
   const router = useRouter();
 
   if (state)
-    return <button onClick={() => router.push("posts")}>Follow</button>;
+    return (
+      <button
+        className="btn btn-sm btn-primary m-3"
+        onClick={() => router.push("posts")}
+      >
+        Follow
+      </button>
+    );
 };
 
 export default AboutChild;
